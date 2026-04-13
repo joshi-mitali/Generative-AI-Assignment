@@ -1,0 +1,33 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+venv/
+.venv/
+
+# CrewAI runtime storage
+crewai_storage/
+
+# Uploaded documents (runtime data)
+knowledge/*.pdf
+knowledge/*.txt
+knowledge/*.md
+knowledge/*.csv
+knowledge/*.json
+knowledge/*.xlsx
+
+# ChromaDB (legacy, if present)
+chroma_db/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
