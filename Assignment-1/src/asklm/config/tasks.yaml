@@ -1,0 +1,26 @@
+document_qa_task:
+  description: >
+    Answer the following question using ONLY the knowledge retrieved from the
+    uploaded documents.
+
+    **Question:** {query}
+
+    **Available Documents:**
+    {available_files}
+
+    **Instructions:**
+    1. Search through the document knowledge base for relevant information.
+    2. Synthesise a clear, well-structured answer.
+    3. For every key fact, cite the source using ONLY filenames from the
+       Available Documents list above, in the format [filename, page X].
+    4. Do NOT invent or guess filenames — use ONLY the exact names listed above.
+    5. If the documents do not contain sufficient information, state:
+       "The uploaded documents do not contain enough information to answer
+       this question."
+    6. Do NOT use any information outside of the provided documents.
+  expected_output: >
+    A clear, well-structured answer to the user's question, with inline
+    source citations using ONLY the exact filenames from the Available
+    Documents list, in the format [filename, page X]. If the documents
+    lack relevant information, an explicit statement saying so.
+  agent: document_qa_specialist

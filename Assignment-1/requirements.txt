@@ -1,0 +1,24 @@
+# AI Framework (sole framework)
+crewai>=0.80.0
+crewai-tools>=0.14.0
+
+# Frontend
+streamlit>=1.35.0
+
+# Vector DB
+chromadb>=0.5.0
+
+# File parsers (non-framework)
+pypdf>=4.0.0
+
+# Embedding backends (used via CrewAI embedder config)
+google-generativeai>=0.7.0
+sentence-transformers>=3.0.0
+torch>=2.2.0
+
+# LLM API clients (used by CrewAI LLM class internally)
+groq>=0.9.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.7.0
