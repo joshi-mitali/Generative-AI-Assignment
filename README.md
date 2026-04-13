@@ -23,3 +23,5 @@ This repository contains two major Generative AI projects demonstrating advanced
 
 ---
 *Note: Refer to the README files located inside each assignment directory for extensive setup instructions and commands.*
+
+
